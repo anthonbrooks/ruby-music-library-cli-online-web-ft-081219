@@ -56,4 +56,7 @@ class Song
     new(song_name, artist, genre)
   end 
   
+  def self.create_from_filename(file)
+    new_from_filename(file).tap { |song| song.save }
+  end
 end 
