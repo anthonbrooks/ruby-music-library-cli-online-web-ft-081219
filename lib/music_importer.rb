@@ -10,6 +10,6 @@ class MusicImporter
   end 
   
   def import 
-    
+    files.each { |song|
   end 
 end 
