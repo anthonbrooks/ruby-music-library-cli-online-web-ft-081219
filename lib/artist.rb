@@ -31,4 +31,8 @@ class Artist
     song.artist = self unless song.artist == self
     @songs << song unless @songs.include?(song)
   end 
+  
+  def genres 
+    self.songs.genre 
+  end 
 end 
