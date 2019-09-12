@@ -1,7 +1,7 @@
 module Concerns::Findable
-  module ClassMethods
-  end 
+  #module ClassMethods
+  #end 
   
-  module InstanceMethods
-  end 
+  #module InstanceMethods
+  #end 
 end 
