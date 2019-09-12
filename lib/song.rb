@@ -44,6 +44,6 @@ class Song
   end 
   
   def self.find_or_create_by_name(name)
-    Song.all.detect { |song| song.name == name } unless Song.all.include?(song.name)
+    Song.all.detect { |song| song.name == name } unless Song.all.include?(self.name)
   end 
 end 
