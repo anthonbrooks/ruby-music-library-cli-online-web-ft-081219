@@ -27,7 +27,10 @@ class Song
     song 
   end 
   
-  
+  def artist=(artist)
+    @artist = artist
+    @artist.add_song(self)
+  end
   
   def find_by_name(name)
     Song.all.detect { |song| song.name == name } unless Song.all.include?(song.name)
