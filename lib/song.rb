@@ -29,7 +29,7 @@ class Song
   
   def artist=(artist)
     @artist = artist
-    @artist.add_song(self)
+    @artist.add_song(self.name)
   end
   
   def find_by_name(name)
