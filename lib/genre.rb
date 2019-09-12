@@ -1,6 +1,7 @@
 class Genre  
   
-  attr_accessor :name, :songs
+  attr_accessor :name
+  attr_reader :songs
   
   @@all = [] 
   
@@ -26,4 +27,8 @@ class Genre
     genre.save
     genre
   end 
+  
+  def artists 
+    self.songs.collect { |song| song.artist }.uniq
+  end
 end 
