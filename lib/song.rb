@@ -35,6 +35,7 @@ class Song
   
   def genre=(genre)
     @genre = genre
+    @genre.songs.push(self)
   end 
   
   def find_by_name(name)
