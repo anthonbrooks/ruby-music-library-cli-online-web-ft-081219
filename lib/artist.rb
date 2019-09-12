@@ -34,6 +34,6 @@ class Artist
   end 
   
   def genres 
-    self.songs.each { |song| song.genre } 
+    self.songs.each { |song| song.genre.name } 
   end 
 end 
