@@ -27,10 +27,10 @@ class Song
   end 
   
   def find_by_name(name)
-    self.all.detect { |song| song.name == name }
+    Song.all.detect { |song| song.name == name } unless Song.all.include?(song.name)
   end 
   
   def find_or_create_by_name(name)
-    
+    Song.all.detect { |song| song.name == name } unless Song.all.include?(song.name)
   end 
 end 
